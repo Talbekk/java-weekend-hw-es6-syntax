@@ -11,4 +11,4 @@ class Book{
   }
 }
 
-module.exports = Book;
+export {Book as default};

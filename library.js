@@ -18,11 +18,11 @@ addBooks(newBooks){
 }
 
 printInventory(){
-  this.books.forEach((book) => {
-    console.log(`${book.title} by ${book.author}`);
+  this.books.forEach(({book:{title, author}}) => {
+    console.log(`${title} by ${author}`);
   });
 }
 
 }
 
-module.exports = Library;
+export {Library as default};
